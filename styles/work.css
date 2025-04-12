@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+    background-color: #fff1d5;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.app {
+    height: 100vh;
+
+    .nav {
+        background-color: white;
+        padding-left: 1em;
+        padding-right: 1em;
+        overflow: scroll;
+
+        .menu {
+            width: 100%;
+            height: 8em;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: #536ba2;
+
+            .title {
+                font-weight: bold;
+                font-style: italic;
+                border-bottom: solid #536ba2 2px;
+            }
+
+            .option {
+                border: solid #536ba2 2px;
+                border-radius: 1em;
+                padding-top: 0.5em;
+                padding-bottom: 0.5em;
+                padding-right: 1em;
+                padding-left: 1em;
+            }
+        }
+
+        .header {
+            color: #536ba2;
+            font-weight: bold;
+            padding-bottom: 0.5em;
+        }
+
+        .footer {
+            color: #536ba2;
+            padding-top: 0.5em;
+            text-decoration: underline;
+            text-align: center;
+        }
+
+        .channel {
+            padding-left: 1em;
+            padding-bottom: 0.5em;
+            color: #536ba2;
+            font-size: 20px;
+        }
+
+        .item {
+            width: 100%;
+            height: 7em;
+            border-top: solid white 1px;
+            border-bottom: solid white 1px;
+            border-radius: 5px;
+            background-color: #bddde4;
+            padding: 1em;
+        }
+
+        .item-selected {
+            width: 100%;
+            height: 7em;
+            border-bottom: solid white 1px;
+            border-radius: 5px;
+            background-color: #9fb3df;
+            padding: 1em;
+        }
+
+        .profile {
+            border: #536ba2 2px solid;
+            border-radius: 3em;
+            padding: 0.5em;
+            margin-top: 6em;
+            color: #536ba2;
+            display: flex;
+            justify-content: space-around;
+        }
+    }
+
+    .chat {
+        display: flex;
+        max-height: 100vh;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .top {
+            width: 100%;
+            padding: 1em;
+            display: flex;
+            min-height: 5em;
+            align-items: center;
+            background-color: white;
+            justify-content: space-between;
+        }
+
+        .middle {
+            overflow: hidden;
+            padding-top: 3em;
+            padding-left: 1em;
+            padding-right: 1em;
+            padding-bottom: 3em;
+
+            .right {
+                padding: 1em;
+                margin-left: 3em;
+                text-align: right;
+                background: #9ec6f3;
+                border-radius: 1.5em;
+            }
+
+            .left {
+                padding: 1em;
+                margin-right: 3em;
+                text-align: left;
+                background: #bddde4;
+                border-radius: 1.5em;
+            }
+        }
+
+        .bottom {
+            width: 100%;
+            display: flex;
+            min-height: 5em;
+            background-color: white;
+            justify-content: space-around;
+
+            input {
+                width: 90%;
+                margin: 1em;
+                padding: 1em;
+                border-radius: 10px;
+                border: solid lightgray 1px;
+            }
+
+            button {
+                padding: 1em;
+                color: white;
+                margin-top: 1em;
+                margin-right: 1em;
+                margin-bottom: 1em;
+                border-radius: 2em;
+                background-color: #536ba2;
+            }
+        }
+    }
+}
